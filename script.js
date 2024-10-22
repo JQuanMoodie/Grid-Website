@@ -20,7 +20,20 @@ function addR() {
 
 // Add a column
 function addC() {
-    alert("Clicked Add Col"); // Replace this line with your code.
+    numCols++;
+    const rows = document.getElementById("grid").rows;
+    //For loop adds new cells that creates a new column
+    for (let i = 0; i < rows.length; i++)
+    {
+            for (let j = rows[i].cells.length; j < numCols; j++)
+            {
+                let temp = rows[i].insertCell(j);
+                temp.style.backgroundColor = "white";
+                temp.addEventListener("click", function(){
+                    temp.style.backgroundColor = colorSelected;
+                })
+            }   
+    }
 }
 
 // Remove a row
