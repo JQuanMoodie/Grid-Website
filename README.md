@@ -14,3 +14,5 @@ Home Page:
 
 * To color you can click an individual cell to color it, click the fill uncolored button to color all cells that do not have a color,
 click the fill all button to color the entire grid, or clear to remove all color from the entire grid
+
+Live Website Link: https://jquanmoodie.github.io/Grid-Website/
