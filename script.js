@@ -50,7 +50,19 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-    alert("Clicked Remove Col"); // Replace this line with your code.
+    //checks if there are no columns
+    if (numCols == 0)
+        alert("No More Rows");
+    else
+    {
+        numCols--;
+        const rows = document.getElementById("grid").rows;
+        //For loop removes last cells of each row deleting the last column
+        for (let i = 0; i < rows.length; i++)
+            {
+                rows[i].deleteCell(-1);
+            }
+    }
 }
 
 // Set global variable for selected color
