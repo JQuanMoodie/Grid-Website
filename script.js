@@ -25,7 +25,14 @@ function addC() {
 
 // Remove a row
 function removeR() {
-    alert("Clicked Remove Row"); // Replace this line with your code.
+    //checks if there are no rows
+    if (numRows == 0)
+        alert("No More Rows");
+    else
+    {
+        numRows--;
+        document.getElementById("grid").deleteRow(numRows);
+    }   
 }
 
 // Remove a column
